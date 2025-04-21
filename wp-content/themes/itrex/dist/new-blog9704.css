@@ -1,0 +1,1822 @@
+/* new post header with bg */
+
+.new-blog-wrap {
+    padding-top: 68px;
+    overflow: hidden;
+}
+.new-post-header-wrap {
+    display: block;
+    width: 100%;
+    height: 450px;
+    max-height: 450px;
+    position: relative;
+}
+
+.new-post-bg-shadow,
+.new-post-bottom-banner-shadow {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.3);
+    z-index: 99;
+}
+
+.new-post-header__background,
+.new-post-bottom-banner-bg-pc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new-post-bottom-banner-bg-mobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new-post-header__background img,
+.new-post-header__background picture,
+.new-post-bottom-banner-bg-pc img,
+.new-post-bottom-banner-bg-pc picture,
+.new-post-bottom-banner-bg-mobile img,
+.new-post-bottom-banner-bg-mobile picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-post-header__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 72px;
+    z-index: 999;
+}
+
+.new-post-header__link {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #4861FC;
+}
+
+.new-post-header__title {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+    color: #FBFBFB;
+    margin: 20px 0 28px;
+    word-wrap: break-word;
+}
+
+.new-post-header__info {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #FBFBFB;
+    margin-bottom: 28px;
+}
+
+.new-post-tags-wrap {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #FBFBFB;
+}
+
+.new-post-tags-wrap a:hover {
+    color: #4861FC;
+}
+
+/* new post intro */
+
+.new-post-intro-wrap {
+    display: block;
+    width: 100%;
+    background: #F3F5FB;
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.new-post-intro {
+    display: block;
+    width: 100%;
+    max-width: 635px;
+    margin: 0 auto;
+}
+
+.new-post-intro p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #6C7177;
+}
+
+.new-post-intro a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-intro a:hover {
+    text-decoration: none;
+}
+
+.new-post-intro .new-post-list {
+    display: block;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+.new-post-intro ul {
+    display: block;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+
+.new-post-intro ul li {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-post-intro ol {
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.new-post-intro ol li {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-post-intro ul li {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.new-post-intro ul li a,
+.new-post-intro ol li a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-intro ol p {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.new-post-intro ul > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFDB3B;
+    border-radius: 50%;
+    background: #FFDB3B;
+    position: absolute;
+    top: 9px;
+    right: calc(100% + 23px);
+}
+
+/* new post bottom banner */
+
+.new-post-bottom-banner-wrap {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    margin-top: 60px;
+}
+
+.new-post-bottom-banner-text-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.new-post-bottom-banner-text {
+    display: block;
+    max-width: 640px;
+    color: #FFFFFF;
+}
+.new-post-bottom-banner-text p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+
+.new-post-bottom-banner-text a {
+    text-decoration: none;
+    color: #FFDB3B;
+}
+
+.new-post-bottom-banner-text a:hover {
+    text-decoration: none;
+}
+
+.new-post-bottom-banner-logo {
+    position: absolute;
+    top: 0;
+    right: calc((100% - 1100px)/2);
+    z-index: 999;
+}
+
+/* new post content */
+
+.new-post-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.new-post-content {
+    display: block;
+    width: 100%;
+    max-width: 635px;
+}
+
+/* new post h2 */
+
+.new-post-content-h2 {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+/* new post h3 */
+
+.new-post-content-h3 {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin: 30px 0;
+}
+
+/* new post h4 */
+
+.new-post-content-h4 {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin: 30px 0;
+}
+
+/* new post h5 */
+
+.new-post-content-h5 {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin: 30px 0;
+}
+
+/* new post text */
+
+.new-post-text-block {
+    margin: 30px 0;
+}
+.new-post-text-block p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+}
+
+.new-post-text-block a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-text-block a:hover {
+    text-decoration: none;
+}
+
+/* new post bold text */
+
+.new-post-bold-text-block {
+    display: block;
+    margin: 30px 0;
+}
+
+.new-post-bold-text-block p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.new-post-bold-text-block a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-bold-text-block a:hover {
+    text-decoration: none;
+}
+
+/* new post text with left line */
+
+.new-post-bold-text-block-with-left-line {
+    display: block;
+    position: relative;
+    padding: 10px 0 10px 20px;
+    margin: 30px 0;
+}
+
+.new-post-bold-text-block-with-left-line:before {
+    display: block;
+    content: '';
+    width: 4px;
+    height: 100%;
+    background: #FFDB3B;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new-post-bold-text-block-with-left-line p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.new-post-bold-text-block-with-left-line a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-bold-text-block-with-left-line a:hover {
+    text-decoration: none;
+}
+
+/* new post quote */
+
+.new-post-bold-text-quote-block {
+    display: block;
+    position: relative;
+    margin: 30px 0;
+    padding: 0 0 0 80px;
+}
+
+.new-post-bold-text-quote-img {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 70px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.new-post-bold-text-quote-img:before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 60px;
+    background: #FFDB3B;
+    position: absolute;
+    top: -15px;
+    left: 8px;
+    transform: rotate(35deg);
+}
+
+.new-post-bold-text-quote-img:after {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 60px;
+    background: #FFDB3B;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    transform: rotate(35deg);
+}
+
+.new-post-bold-text-quote-block p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    color: #6C7177;
+}
+
+.new-post-bold-text-quote-author {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #6C7177;
+    padding-left: 40px;
+    position: relative;
+}
+
+.new-post-bold-text-quote-author:before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 4px;
+    background: #FFDB3B;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 10px;
+}
+
+/* new post list */
+
+.new-post-list-block-wrap {
+    margin: 30px 0;
+}
+
+.new-post-list,
+.new-post-sub-list,
+.new-post-sub-sub-list {
+    display: block;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+.new-post-num-list,
+.new-post-num-sub-list,
+.new-post-num-sub-sub-list {
+    display: block;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+}
+
+
+.new-post-list li {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-post-num-list,
+.new-post-num-sub-list,
+.new-post-num-sub-sub-list {
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.new-post-num-list li {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-post-list li p {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.new-post-list li p a,
+.new-post-num-list li p a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-num-list li p {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.new-post-list li span {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.new-post-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFDB3B;
+    border-radius: 50%;
+    background: #FFDB3B;
+    position: absolute;
+    top: 9px;
+    right: calc(100% + 23px);
+}
+
+.new-post-sub-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #FFDB3B;
+    position: absolute;
+    top: 9px;
+    right: calc(100% + 23px);
+}
+
+.new-post-sub-sub-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFDB3B;
+    background: #FFDB3B;
+    position: absolute;
+    top: 9px;
+    right: calc(100% + 23px);
+}
+
+/* new post table column */
+
+.new-post-table-block-wrap {
+    margin: 30px 0;
+    overscroll-behavior-x: contain;
+    overflow-x: auto;
+}
+
+.new-post-table-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.new-post-table-block.long-table {
+    width: 1400px;
+}
+
+.new-post-table-column-title {
+    height: 64px;
+    padding: 0 10px;
+    background: #F3F5FB;
+    border: 1px solid #F5F5F5;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #6C7177;
+}
+
+.new-post-table-column-list {
+    display: block;
+    padding: 24px 10px;
+    border: 1px solid #F5F5F5;
+}
+
+.new-post-table-column-list p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-table-column-list p a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-table-column-list span {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #000000;
+}
+
+/* new post table row */
+
+.new-post-table-row-title {
+    padding: 0 10px;
+    background: #F3F5FB;
+    border: 1px solid #F5F5F5;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #6C7177;
+}
+
+.new-post-table-row-list {
+    padding: 24px 10px;
+    border: 1px solid #F5F5F5;
+    vertical-align: top;
+}
+
+.new-post-table-row-list p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-table-row-list p a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-table-row-list span {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #000000;
+}
+
+/* new post table with list */
+
+.new-post-table-list-block-wrap {
+    display: block;
+    margin: 30px 0;
+    overscroll-behavior-x: contain;
+    overflow-x: auto;
+}
+
+.new-post-table-list-block-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.new-post-table-list-block-wrap table.long-table {
+    width: 1000px;
+}
+
+.new-post-table-list-block-wrap tr th {
+    height: 64px;
+    padding: 0 10px;
+    background: #F3F5FB;
+    border: 1px solid #F5F5F5;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #6C7177;
+    text-align: left;
+}
+
+.new-post-table-list-block-wrap tr td {
+    padding: 24px 10px;
+    border: 1px solid #F5F5F5;
+    vertical-align: top;
+}
+
+.new-post-table-list-row-title {
+    width: 103px !important;
+    background: #F3F5FB;
+    border: 1px solid #F5F5F5;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #6C7177;
+    text-align: left;
+}
+
+.new-post-table-list-block-wrap tr td span {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.new-post-table-list-block-wrap tr td div {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-table-list-block-wrap tr td div p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-table-list-block-wrap tr td div p a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-table-list,
+.new-post-table-sub-list,
+.new-post-table-sub-sub-list {
+    display: block;
+    margin: 10px 0;
+    padding: 0 0 0 25px;
+}
+
+.new-post-table-list li {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.new-post-table-list li p {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-table-list li p a {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-table-list li span {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #000000;
+}
+
+.new-post-table-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFDB3B;
+    border-radius: 50%;
+    background: #FFDB3B;
+    position: absolute;
+    top: 5px;
+    right: calc(100% + 13px);
+}
+
+.new-post-table-sub-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #FFDB3B;
+    position: absolute;
+    top: 5px;
+    right: calc(100% + 13px);
+}
+
+.new-post-table-sub-sub-list > li:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFDB3B;
+    background: #FFDB3B;
+    position: absolute;
+    top: 5px;
+    right: calc(100% + 13px);
+}
+
+/* new post CTA small */
+
+.new-post-cta-small-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.new-post-cta-small-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background: #F3F5FB;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.new-post-cta-small-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background: #4861FC;
+}
+
+.new-post-cta-small-left-title {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.new-post-cta-small-left-text {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+}
+
+.new-post-cta-small-right-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.new-post-cta-small-right-link .arrow-link__arrow {
+    display: block;
+    margin: 0 0 5px 15px;
+}
+
+/* new post CTA big */
+
+.new-post-cta-big-wrap {
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+    position: relative;
+    padding: 48px 40px;
+    box-sizing: border-box;
+    background: #F3F5FB;
+}
+
+.new-post-cta-big-content {
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+
+.new-post-cta-big-title {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.new-post-cta-big-text {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+    margin: 15px 0 30px;
+}
+
+.new-post-cta-big-link {
+    display: flex;
+    width: 220px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    background: #4861FC;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* new post photo with text small */
+
+.new-post-photo-text-small-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.new-post-photo-text-small-image {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.new-post-photo-text-small-content {
+    display: block;
+    width: calc(100% - 335px);
+}
+
+.new-post-photo-text-small-title {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.new-post-photo-text-small-text {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #333333;
+}
+
+.new-post-photo-text-small-link {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #4861FC;
+    margin-top: 10px;
+}
+
+/* new post photo with text small */
+
+.new-post-photo-text-big-wrap {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.new-post-photo-text-big-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.new-post-photo-text-big-image picture,
+.new-post-photo-text-big-image img {
+    width: 100%;
+}
+
+.new-post-photo-text-big-text {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.new-post-photo-text-big-link {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #4861FC;
+}
+
+/* new post video */
+
+.new-post-video-wrap {
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.new-post-video-wrap iframe,
+.new-post-video-wrap object,
+.new-post-video-wrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* new post menu */
+
+.new-post-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+}
+
+.new-post-menu-block {
+    max-width: 380px;
+}
+
+.new-post-menu {
+    display: block;
+    padding: 30px 30px 20px;
+    background: #F3F5FB;
+}
+
+.new-post-menu-title {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6C7177;
+}
+
+.new-post-menu-h2 {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 25px 0 12px;
+    cursor: pointer;
+}
+
+.new-post-menu-h2:hover {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-menu-h3 {
+    display: block;
+    width: 100%;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.002em;
+    color: #6C7177;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.new-post-menu-h3:hover {
+    color: #4861FC;
+    text-decoration: none;
+}
+
+.new-post-menu-bottom {
+    display: block;
+    padding: 30px;
+    background: #F3F5FB;
+    margin: 15px 0;
+}
+
+.new-post-menu-bottom-title {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.new-post-menu-bottom-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #4861FC;
+    cursor: pointer;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.new-post-menu-current {
+    color: #4861FC;
+}
+
+/* ebook */
+
+.new-post-ebook-wrap {
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+    position: relative;
+    padding: 48px 40px;
+    box-sizing: border-box;
+}
+
+.new-post-ebook-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new-post-ebook-bg picture,
+.new-post-ebook-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-post-ebook-content-wrap {
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+
+.new-post-ebook-title {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FBFBFB;
+    margin-bottom: 15px;
+}
+
+.new-post-ebook-text {
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #FBFBFB;
+    margin-bottom: 40px;
+}
+
+.ebook_email {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+}
+
+.ebook_email:before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #8F8F97;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+.ebook_email.approved:before {
+    border: 1px solid #8F8F97;
+    background: #ffdb3b;
+}
+
+.ebook_email input {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    border-bottom: 1px solid #8F8F97;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+
+.ebook_email input:-webkit-autofill,
+.ebook_email input:-webkit-autofill:hover,
+.ebook_email input:-webkit-autofill:focus,
+.ebook_email input:-webkit-autofill:active {
+     border: none !important;
+     background-color: transparent !important;
+     -webkit-text-fill-color: #FFFFFF !important;
+     -webkit-box-shadow: none !important;
+     transition: background-color 5000s ease-in-out 0s !important;
+ }
+
+.ebook_checkbox {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+}
+
+.ebook_checkbox label input {
+    display: none;
+}
+
+.ebook_checkbox span:before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #8F8F97;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.ebook_checkbox label span {
+    display: block;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #8F8F97;
+    padding-left: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
+}
+
+.ebook_checkbox label input:checked + span:before {
+    background: #ffdb3b;
+}
+
+.new-post-ebook-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    padding: 14px 30px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: #4861FC;
+}
+
+.new-post-ebook-btn.not-allow {
+    cursor: not-allowed;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.ebook-submit {
+    display: none;
+}
+
+/* adaptive */
+
+@media screen and (max-width: 1440px) {
+    .new-post-bottom-banner-logo {
+        right: calc((100% - 1100px)/2 + 50px);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .new-post-header__content {
+        padding: 72px 30px 0;
+        box-sizing: border-box;
+    }
+    .new-post-intro {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .new-post-content-wrap {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .new-post-menu-wrap {
+        margin-left: 20px;
+    }
+    .new-post-bottom-banner-text-wrap {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .new-post-bottom-banner-bg-pc img,
+    .new-post-bottom-banner-bg-pc picture,
+    .new-post-bottom-banner-bg-mobile img,
+    .new-post-bottom-banner-bg-mobile picture {
+        width: auto;
+    }
+    .new-post-bottom-banner-logo {
+        right: -81px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .new-post-header__content {
+        padding: 52px 30px 0;
+    }
+    .new-post-content-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .new-post-content {
+        max-width: 100%;
+        order: 2;
+    }
+    .new-post-menu-wrap {
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        order: 1;
+        margin: 0 -30px 60px;
+    }
+    .new-post-menu-block {
+        position: relative;
+        max-width: 100%;
+        z-index: 99999;
+    }
+    .new-post-menu-bottom {
+        display: none;
+    }
+    .new-post-menu-h3 {
+        display: none;
+    }
+    .new-post-menu-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.002em;
+        color: #6C7177;
+        margin-bottom: 5px;
+    }
+    .new-post-menu {
+        padding: 12px 30px 0;
+    }
+    .new-post-menu-links {
+        display: flex;
+        justify-content: flex-start;
+        overscroll-behavior-x: contain;
+        overflow-x: auto;
+        margin: 0 -30px;
+        padding: 0 30px;
+        width: calc(100% + 60px);
+        padding-bottom: 12px;
+    }
+    .new-post-menu-h2 {
+        width: 300px;
+        margin: 0 12px 0 0;
+        flex-shrink: 0;
+    }
+    .new-post-photo-text-small-image {
+        width: 354px;
+        height: 354px;
+    }
+    .new-post-photo-text-small-content {
+        width: calc(100% - 389px);
+    }
+    .new-post-bottom-banner-bg-pc img,
+    .new-post-bottom-banner-bg-pc picture,
+    .new-post-bottom-banner-bg-mobile img,
+    .new-post-bottom-banner-bg-mobile picture {
+        width: 100%;
+    }
+    .new-post-bottom-banner-wrap {
+        height: 272px;
+    }
+    .new-post-bottom-banner-text {
+        max-width: 510px;
+    }
+    .new-post-bottom-banner-logo {
+        height: 272px;
+        right: -150px
+    }
+}
+
+@media screen and (max-width: 830px){
+    .new-post-header__title br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .new-blog-wrap {
+        padding-top: 64px;
+    }
+    .new-post-header__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .new-post-intro p {
+        font-weight: 400;
+    }
+    .new-post-content-h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .new-post-content-h4 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .new-post-bottom-banner-text {
+        max-width: 350px;
+    }
+    .new-post-bottom-banner-text p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .new-post-bottom-banner-logo {
+        right: -175px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .new-post-header-wrap .new-post-header__background img,
+    .new-post-header-wrap .new-post-header__background picture {
+        width: auto;
+    }
+    .new-blog-wrap {
+        padding-top: 58px;
+    }
+    .new-post-header__content {
+        padding: 60px 30px 0;
+    }
+    .new-post-header__link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .new-post-header__title {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .new-post-cta-small-wrap {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .new-post-cta-small-left {
+        width: 100%;
+    }
+    .new-post-cta-small-right {
+        width: 100%;
+        height: 80px;
+    }
+    .new-post-photo-text-small-wrap {
+        flex-direction: column;
+    }
+    .new-post-photo-text-small-image {
+        width: 100%;
+        height: 320px;
+    }
+    .new-post-photo-text-small-content {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .new-post-photo-text-small-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .new-post-text-block {
+        margin: 20px 0;
+    }
+    .new-post-menu-title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .new-post-menu-h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .new-post-photo-text-small-source {
+        width: 100%;
+    }
+    .new-post-cta-big-link {
+        width: 100%;
+    }
+    .new-post-table-block {
+        width: 580px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+    .new-post-table-list-block-wrap {
+        overscroll-behavior-x: contain;
+        overflow-x: auto;
+    }
+    .new-post-table-list-block-wrap table {
+        width: 580px;
+    }
+    .new-post-bottom-banner-wrap {
+        height: 100%;
+    }
+    .new-post-bottom-banner-text-wrap {
+        flex-direction: column;
+        padding: 30px 30px 0 30px;
+    }
+    .new-post-bottom-banner-text {
+        max-width: 100%;
+    }
+    .new-post-bottom-banner-logo {
+        position: static;
+        width: calc(100% + 60px);
+        height: auto;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .new-post-bottom-banner-bg-pc {
+        display: none;
+    }
+
+    .new-post-bottom-banner-bg-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .new-post-header__content {
+        padding: 80px 30px 0;
+    }
+    .new-post-header-wrap {
+        height: 550px;
+        max-height: 550px;
+    }
+    .new-post-content-h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .new-post-content-h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .new-post-content-h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .new-post-content-h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .new-post-bold-text-block p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .new-post-bold-text-block-with-left-line p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .new-post-bold-text-quote-block {
+        padding: 50px 0 0 0;
+    }
+    .new-post-bold-text-quote-block p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .new-post-bold-text-quote-author:before {
+        top: 12px;
+    }
+    .new-post-menu-h2 {
+        width: 280px;
+    }
+    .new-post-cta-big-wrap {
+        padding: 35px 30px;
+    }
+    .new-post-cta-big-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .new-post-ebook-content-wrap .wpcf7-form .wpcf7-response-output {
+        display: none !important;
+    }
+    .new-post-ebook-wrap {
+        padding: 32px 28px;
+    }
+    .new-post-ebook-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .ebook_email {
+        max-width: 100%;
+    }
+    .ebook_email input {
+        max-width: 100%;
+    }
+    .ebook_checkbox {
+        max-width: 100%;
+    }
+    .ebook_checkbox label span {
+        max-width: 100%;
+    }
+    .new-post-ebook-btn {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .new-post-header-wrap {
+        height: 600px;
+        max-height: 600px;
+    }
+}
+
+
+

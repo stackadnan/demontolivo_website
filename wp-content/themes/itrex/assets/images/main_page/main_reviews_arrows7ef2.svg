@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow-left-rev" viewBox="0 0 45 46">
+        <circle cx="22.5" cy="22.8086" r="22.5" transform="rotate(180 22.5 22.8086)"/>
+        <path d="M16.936 23.9006L31 23.9006L31 21.7886L16.936 21.7886L22.024 16.7246L20.68 15.3806L13.216 22.8446L20.68 30.3086L22.024 28.9886L16.936 23.9006Z" fill="white"/>
+    </symbol>
+    <symbol id="arrow-right-rev" viewBox="0 0 45 46">
+        <circle cx="22.5" cy="22.8086" r="22.5"/>
+        <path d="M28.064 21.7166H14V23.8286H28.064L22.976 28.8926L24.32 30.2366L31.784 22.7726L24.32 15.3086L22.976 16.6286L28.064 21.7166Z" fill="white"/>
+    </symbol>
+</svg>
+
+
+

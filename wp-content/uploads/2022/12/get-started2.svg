@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 51" width="45" height="51">
+	<title>get-started-svg</title>
+	<defs>
+		<image  width="24" height="31" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAfAQMAAADHvJ8DAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA/9s7yDh40gAAAAJ0Uk5TAP9bkSK1AAAASklEQVR4nGXKsQ2AMAxE0S+5SJkRGIXNcEbzKBkBiYLSXJAlCopXnO6DDWgBfX7WXnZ9OWgZZcpJ8ywum3Rw3hZ1xx34FWQxwX4e74Qnooib6HwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffdb3b } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m44.6 12.7v25.5l-22.1 12.8-22-12.8v-25.5l22-12.7zm-3 1.8l-19-11-19 11v21.9l19 11 19-11z"/>
+	<use id="run-line" href="#img1" x="9" y="10"/>
+</svg>
